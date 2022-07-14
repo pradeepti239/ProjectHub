@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary_color: #0f5288;
+    --stroke_color: #f5f5f5;
+    --keywords_color: #D1FDF2;
+    --similarprojects_color: #F5FBFF;
+    --light_primary: #F5FBFF;
+    --gray_color: #AEAEAE;
+    --light_gray:rgba(240, 240, 240, 0.671);
+}
+
+/* search in nav start */
+.search_form .search_txt{
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.search_icon{
+    box-sizing: border-box;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+.search_form:hover,
+.search_form:valid{
+    cursor: pointer;
+}
+
+.search_form:hover .search_icon,
+.search_form:valid .search_icon{
+    padding: 5px;
+    border-radius: 10px;
+    background: var(--primary_color);
+    color: white;
+}
+
+.search_form .search_txt{
+ background-color: transparent;
+}
+
+.search_form:hover .search_txt,
+.search_form:valid .search_txt{
+    background: white;
+    color: var(--primary_color)
+}
+
+/* search in nav end */
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+body {
+    background-image: url('../images/bg5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.btnwhite, .btnblue {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 !important;
+    max-width: fit-content;
+}
+
+.btnwhite {
+    background-color: white;
+    color: var(--primary_color);
+}
+
+.btnblue:hover, .btnwhite:hover{
+    transform: scale(1.05);
+}
+
+.btnblue {
+    background-color: var(--primary_color);
+    color: white
+}
+
+.btnblue a{
+    text-decoration: none;
+}
+
+/* for Navbar */
+
+.nav_bar {
+    padding: 0 !important;
+    color: var(--primary_color) !important;
+}
+
+.nav_link {
+    color: var(--primary_color) !important;
+    font-weight: 500;
+}
+
+.nav_item:hover>.nav_link {
+    color: black;
+    font-weight: 600;
+}
+
+.logo {
+    height: 9vh;
+    width: auto;
+}
+
+@media (max-width: 992px) {
+    .logo_div {
+        margin-right: 8rem !important;
+    }
+
+    .search_form {
+        display: none;
+    }
+
+}
+
+.search_form {
+    margin: 0 auto;
+    margin-right: 10vw;
+}
+
+.search_box {
+    padding: 0.2em 1em;
+
+}
+
+.search_box input {
+    border: none;
+}
+
+.search_txt::placeholder {
+    color: var(--primary_color);
+    background-color: var(--light_primary);
+    opacity: 50%;
+    font-size: 1rem;
+}
+
+.search_btn {
+    color: var(--primary_color);
+    /* transition: 200ms; */
+    /* background-color:var(--light_primary); */
+
+}
+
+/* .search_txt {
+    width: 0px;
+} */
+
+/* .search_box:hover>.search_txt {
+    width: auto;
+} */
+
+/* .search_box:hover{
+    border: 1px solid var(--primary_color);
+} */
+.search_box{
+    border: 0;
+    background-color: transparent !important;
+}
+
+/* for footer */
+.footer {
+    /* color: var(--primary_color);
+    background-color: rgba(256,256,256,0.4); */
+    color: gray;
+    font-size: 0.8em;
+    height: 5vh;
+    /* background-color:rgba(15, 82, 136, 0.7); */
+}
+
+/* for top button */
+.top_btn {
+    color: var(--primary_color);
+}
+
+/* Home page start */
+
+/* for DWIT card */
+
+.dwit_info {
+    background-color: var(--primary_color);
+    color: white;
+    /* padding: 3%; */
+}
+
+.dwit_info .card-body {
+    padding: 10% 0 0 5%;
+}
+
+.dwit_title_home {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.dwit_address_home {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* for other colleges */
+.college_title_home {
+    color: var(--primary_color);
+}
+
+.college_address_home {
+    color: var(--primary_color);
+    font-size: smaller;
+}
+
+/* Home page end */
+
+/* Select year page start */
+.pagetitle {
+    color: var(--primary_color);
+}
+
+.underline {
+    content: " ";
+    width: 17%;
+    display: block;
+    height: 2px;
+    background-color: var(--primary_color);
+}
+
+.box {
+    background-color: var(--primary_color);
+    max-width: fit-content;
+    font-size: 1.25em;
+    color: white;
+}
+
+.year_box:hover{
+    transform: scale(1.07);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary_color);
+}
+
+/* Select year page end */
+
+/* all projects start*/
+.allpcard {
+    border: 2px solid var(--stroke_color);
+    margin-bottom: 1rem;
+}
+
+.yearly_projects .allpcard{
+    width: 30%;
+}
+
+.allpheading {
+color: var(--primary_color);
+    font-weight: 500;
+}
+
+.allpstudent {
+    font-size: smaller;
+    color: var(--primary_color);
+}
+
+.allpabstract {
+    text-align: justify;
+}
+
+.allpcard .underline, .vpcard .underline {
+    width: 100%;
+    height: 1px;
+}
+
+.allplower {
+    color: var(--primary_color);
+}
+
+.allpview {
+    line-height: 2rem;
+}
+
+.arrowvp {
+    line-height: 2rem;
+}
+
+/* all projects end*/
+
+/* view project start */
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+.vpcard {
+    border: 2px solid var(--stroke_color);
+    background-color: white;
+}
+
+.projectHeading {
+    font-weight: 500;
+}
+
+.studentsname {
+    color: var(--primary_color);
+    font-weight: 300;
+}
+
+.vpcard .underline {
+    width: 40%;
+    height: 2px;
+}
+
+.projectabstractfull {
+    text-align: justify;
+}
+
+.keywords {
+    background-color: var(--keywords_color);
+    max-width: fit-content;
+    font-size: 0.75em;
+
+}
+
+.download_btn {
+    background-color: var(--primary_color);
+    color: white;
+    font-size: 0.8em;
+    border-radius: 0;
+    font-weight: 300;
+}
+
+.download_btn:hover{
+    transform: scale(1.05);
+}
+
+.similiar_projects {
+    border-radius: 0;
+    text-align: center;
+    font-size: x-small;
+    height: 8vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.similiar_projectsContainer{
+    background-color: white;
+    width: 20%; 
+    border: 1px solid var(--stroke_color);
+}
+
+/* view project end */
+
+/* view all colleges start */
+
+.college_card {
+    display: flex;
+    /* color: var(--primary_color); */
+}
+
+.college_card .btnblue {
+    font-size: smaller;
+    font-weight: 300;
+}
+
+.college_logo {
+    height: auto;
+    /* width: 35%; */
+}
+
+/* view all colleges end */
+
+/* explore page start */
+.explore_search_bar::placeholder {
+    color: var(--primary_color);
+    opacity: 50%;
+    font-size: 1rem;
+}
+
+.explore_search_bar {
+    border: 1px solid var(--primary_color);
+    width: 90%;
+}
+
+.explore_search_bar input {
+    border: 0;
+    width: 95%;
+}
+
+.explore_search_txt{
+    background-color: transparent;
+}
+
+/* .explore_search_bar .explore_search_txt {
+    width: 50%;
+} */
+
+.filter_section {
+    background-color: var(--light_gray);
+}
+
+.filter_head {
+    color: white;
+    background-color: var(--primary_color);
+}
+
+.categories {
+    width: 90%;
+    background: white;
+    max-height: 25%;
+}
+
+.categories_checkbox {
+    font-size: 0.7em;
+    overflow-x: hidden;
+}
+
+.txt {
+    color: var(--gray_color);
+    font-size: smaller;
+
+}
+
+@media (max-width: 992px) {
+    .filter_desktop {
+        display: none;
+    }
+
+    .search_desktop {
+        display: none;
+    }
+    .allpcard {
+        width: 100%;
+    }
+    .similiar_projectsContainer{
+        min-width: 100%;
+    }
+    .container{
+        width: 90% !important;
+    }
+    .vpcard{
+        padding: 0 2vw !important;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .filter_mobile {
+        display: none;
+    }
+
+    .search_mobile{
+        display: none;
+    }
+}
+
+#filterbtntoggle {
+    font-size: 0.8rem;
+}
+
+.search_mobile .filter_section{
+    background-color: var(--similarprojects_color);
+    display: none;
+}
+
+.search_mobile .categories{
+    height: auto;
+}
+
+.filter_box{
+    position: absolute;
+    top:4vh;  
+    left: 28%; 
+}
+
+#cross{
+    cursor: pointer;
+}
+
+.search_mobile .explore_search_txt{
+    width: 90%;
+}
+
+/* explore page end */

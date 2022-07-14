@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- For icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Animation on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <title>Project Hub</title>
+</head>
+
+<body class="explore_body">
+    <!-- Navbar start-->
+    <nav class="navbar navbar-expand-lg nav_bar shadow-sm mb-3 bg-body"
+        style="background-color: transparent !important;">
+        <div class="container-fluid">
+            <a class="navbar-brand logo_div" href="#"><img src="./images/projectHub.png" alt="Project Hub logo"
+                    class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> <i class='bx bx-menu'
+                        style=" color: var(--primary_color) !important;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 ms-0 mb-lg-0">
+                    <li class="nav-item nav_item">
+                        <a class="nav-link active nav_link" aria-current="page" href="index.html"><i
+                                class='bx bx-home-alt-2'></i>
+                            Home</a>
+                    </li>
+                    <li class="nav-item nav_item">
+                        <a class="nav-link nav_link" href="explore.html"><i class='bx bx-compass'></i> Explore</a>
+                    </li>
+                </ul>
+
+                <form class="search_form" action="">
+                    <input class="search_txt" type="search" required>
+                    <i class='bx bx-search search_icon'></i>
+                </form>
+
+                <!-- <form class="search_form" action="">
+                    <div class="search_box ">
+                        <input class="search_txt" type="search" name="" placeholder="Search" required>
+                        <a class="search_btn" href="#"><i class='bx bx-search'></i></a>
+                    </div>
+
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end-->
+
+    <!-- container start-->
+    <div class="container mx-auto" data-aos="zoom-out">
+        <!-- search section start -->
+
+        <!-- for mobile start -->
+        <div class="row align-items-center mb-4 search_mobile">
+
+            <div class="filter_box">
+                <div class="col-8 filter_section filter_section_mobile ">
+                    <div class="filter_head p-1 d-flex justify-content-between">
+                        <span><i class='bx bx-filter-alt pe-2'></i>
+                            Filter</span>
+                        <i class='bx bx-x bx-sm' id="cross"></i>
+                    </div>
+                    <div class="categories mt-3 mx-auto">
+                        <div class="category_title d-flex justify-content-between fs-6 p-2">
+                            Batches<i class='bx bx-chevron-down bx-sm'></i>
+                        </div>
+                        <div class="categories_checkbox my-2">
+                            <div class="row">
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2014
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2015
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2016
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2017
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2018
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2019
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2020
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2021
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2022
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2023
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="categories mt-3 mx-auto">
+                        <div class="category_title d-flex justify-content-between fs-6 p-2">
+                            Colleges<i class='bx bx-chevron-down bx-sm'></i>
+                        </div>
+                        <div class="categories_checkbox my-2">
+                            <div class="row">
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Texas International College
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Deerwalk Institute of Technology
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Texas International College
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Deerwalk Institute of Technology
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Texas International College
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Deerwalk Institute of Technology
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Texas International College
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Deerwalk Institute of Technology
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Texas International College
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Deerwalk Institute of Technology
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="categories mt-3 mx-auto">
+                        <div class="category_title d-flex justify-content-between fs-6 p-2">
+                            Stream<i class='bx bx-chevron-down bx-sm'></i>
+                        </div>
+                        <div class="categories_checkbox my-2">
+                            <div class="row">
+                                <div class="col-12 mb-1">
+                                    <input type="checkbox"> B.Sc.CSIT
+                                </div>
+                                <div class="col-12 mb-1">
+                                    <input type="checkbox"> BCA
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="categories my-3 mx-auto">
+                        <div class="category_title d-flex justify-content-between fs-6 p-2">
+                            Types<i class='bx bx-chevron-down bx-sm'></i>
+                        </div>
+                        <div class="categories_checkbox my-2">
+                            <div class="row">
+                                <div class="col-12 mb-1">
+                                    <input type="checkbox"> Project I
+                                </div>
+                                <div class="col-12 mb-1">
+                                    <input type="checkbox"> Project II
+                                </div>
+                                <div class="col-12 mb-1">
+                                    <input type="checkbox"> Project III
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-10 ps-0">
+                <div class="form">
+                    <div class="explore_search_bar mx-auto">
+                        <input class="explore_search_txt ps-3" type="text" placeholder="Search">
+                        <a class="search_btn" href="#"><i class='bx bx-search'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <button class="btn btnblue lh-1" id="filterbtntoggle">
+                    <i class='bx bx-filter-alt pe-1'></i>
+                </button>
+            </div>
+        </div>
+        <!-- for mobile end -->
+
+        <div class="row">
+            <!-- filter section for desktop start-->
+            <div class="col-md-3 ps-0 filter_desktop">
+                <div class="row filter_section">
+                    <div class="filter_head py-1">
+                        <i class='bx bx-filter-alt pe-2'></i>Filter
+                    </div>
+                    <div class="categories mt-3 mx-auto">
+                        <div class="category_title d-flex justify-content-between fs-6 pt-2">
+                            Batches<i class='bx bx-chevron-down bx-sm'></i>
+                        </div>
+                        <div class="categories_checkbox my-2">
+                            <div class="row">
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2014
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2015
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2016
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2017
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2018
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2019
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2020
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2021
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2022
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <input type="checkbox"> 2023
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="categories mt-3 mx-auto">
+                        <div class="category_title d-flex justify-content-between fs-6 pt-2">
+                            Colleges<i class='bx bx-chevron-down bx-sm'></i>
+                        </div>
+                        <div class="categories_checkbox categories_colleges my-2">
+                            <div class="row">
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Texas International College
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Deerwalk Institute of Technology
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Texas International College
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Deerwalk Institute of Technology
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Texas International College
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Deerwalk Institute of Technology
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Texas International College
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Deerwalk Institute of Technology
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Texas International College
+                                </div>
+                                <div class="col-12 mb-1 text-nowrap">
+                                    <input type="checkbox"> Deerwalk Institute of Technology
+                                </div>
+                                <div id="all_colleges" style="display: none;">
+                                    <div class="col-12 mb-1 text-nowrap">
+                                        <input type="checkbox"> Texas International College
+                                    </div>
+                                    <div class="col-12 mb-1 text-nowrap">
+                                        <input type="checkbox"> Deerwalk Institute of Technology
+                                    </div>
+                                    <div class="col-12 mb-1 text-nowrap">
+                                        <input type="checkbox"> Texas International College
+                                    </div>
+                                    <div class="col-12 mb-1 text-nowrap">
+                                        <input type="checkbox"> Deerwalk Institute of Technology
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="d-flex justify-content-end"> <a href="#view_all" id="view_all">View All</a>
+                            </span>
+                            <span class="d-flex justify-content-end"> <a href="#view_less" id="view_less">View Less</a>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="categories mt-3 mx-auto">
+                        <div class="category_title d-flex justify-content-between fs-6 pt-2">
+                            Stream<i class='bx bx-chevron-down bx-sm'></i>
+                        </div>
+                        <div class="categories_checkbox my-2">
+                            <div class="row">
+                                <div class="col-12 mb-1">
+                                    <input type="checkbox"> B.Sc.CSIT
+                                </div>
+                                <div class="col-12 mb-1">
+                                    <input type="checkbox"> BCA
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="categories my-3 mx-auto">
+                        <div class="category_title d-flex justify-content-between fs-6 pt-2">
+                            Types<i class='bx bx-chevron-down bx-sm'></i>
+                        </div>
+                        <div class="categories_checkbox mb-3">
+                            <div class="row">
+                                <div class="col-12 mb-1">
+                                    <input type="checkbox"> Project I
+                                </div>
+                                <div class="col-12 mb-1">
+                                    <input type="checkbox"> Project II
+                                </div>
+                                <div class="col-12 mb-1">
+                                    <input type="checkbox"> Project III
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- filter section for desktop end-->
+
+            <div class="col-lg-9 col-md-12 col-sm-12 pe-0">
+                <div class="align-items-center mb-4 search_desktop">
+                    <div class="col ps-0">
+                        <div class="form">
+                            <div class="explore_search_bar mx-auto">
+                                <input class="explore_search_txt ps-3" type="text" placeholder="Search">
+                                <a class="search_btn" href="#"><i class='bx bx-search'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="serch_results d-flex justify-content-center">
+                    <div class="txt">Search results appear here.</div>
+                </div>
+
+                <div class="featured_projects">
+
+                    <div class="pagetitle mt-5 mb-4">
+                        <h4 class="text-center">Featured Projects</h4>
+                        <div class="underline mx-auto"></div>
+                    </div>
+
+                    <div class="row justify-content-evenly">
+                        <!-- card for project start -->
+                        <div
+                            class=" col-lg-5 col-md-12 col-sm-12 bg-white d-flex flex-column allpcard shadow-sm p-3 m-2">
+                            <div class="allpheading text-capitalize text-wrap pb-2 fs-5">IMAGE CAPTION GENERATOR USING
+                                CNN
+                                AND RNN
+                            </div>
+                            <div class="allpstudent pb-2"> By Student Name</div>
+                            <p class="allpabstract text-wrap">In the past few years, the problem of generating
+                                descriptive
+                                sentences automatically for images has garnered a rising interest in natural language
+                                processing and
+                                computer vision research. Image captioning is a fundam...</p>
+                            <div class="underline"></div>
+
+                            <div class="row allplower d-flex pt-2">
+                                <div class="col-md-6">
+                                    <i class='bx bxs-star'></i> 14
+                                </div>
+                                <div class="col-md-6 text-end allpview">
+                                    <a href="viewproject.html"
+                                        class="d-flex align-items-center justify-content-end">View
+                                        Project<i class='bx bx-right-arrow-alt bx-sm arrowvp'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card for project end -->
+
+                        <!-- card for project start -->
+                        <div
+                            class=" col-lg-5 col-md-12 col-sm-12 bg-white d-flex flex-column allpcard shadow-sm p-3 m-2">
+                            <div class="allpheading text-capitalize text-wrap pb-2 fs-5">IMAGE CAPTION GENERATOR USING
+                                CNN
+                                AND RNN
+                            </div>
+                            <div class="allpstudent pb-2"> By Student Name</div>
+                            <p class="allpabstract text-wrap">In the past few years, the problem of generating
+                                descriptive
+                                sentences automatically for images has garnered a rising interest in natural language
+                                processing and
+                                computer vision research. Image captioning is a fundam...</p>
+                            <div class="underline"></div>
+
+                            <div class="row allplower d-flex pt-2">
+                                <div class="col-md-6">
+                                    <i class='bx bxs-star'></i> 14
+                                </div>
+                                <div class="col-md-6 text-end allpview">
+                                    <a href="viewproject.html"
+                                        class="d-flex align-items-center justify-content-end">View
+                                        Project<i class='bx bx-right-arrow-alt bx-sm arrowvp'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card for project end -->
+
+                        <!-- card for project start -->
+                        <div
+                            class=" col-lg-5 col-md-12 col-sm-12 bg-white d-flex flex-column allpcard shadow-sm p-3 m-2">
+                            <div class="allpheading text-capitalize text-wrap pb-2 fs-5">IMAGE CAPTION GENERATOR USING
+                                CNN
+                                AND RNN
+                            </div>
+                            <div class="allpstudent pb-2"> By Student Name</div>
+                            <p class="allpabstract text-wrap">In the past few years, the problem of generating
+                                descriptive
+                                sentences automatically for images has garnered a rising interest in natural language
+                                processing and
+                                computer vision research. Image captioning is a fundam...</p>
+                            <div class="underline"></div>
+
+                            <div class="row allplower d-flex pt-2">
+                                <div class="col-md-6">
+                                    <i class='bx bxs-star'></i> 14
+                                </div>
+                                <div class="col-md-6 text-end allpview">
+                                    <a href="viewproject.html"
+                                        class="d-flex align-items-center justify-content-end">View
+                                        Project<i class='bx bx-right-arrow-alt bx-sm arrowvp'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card for project end -->
+
+                        <!-- card for project start -->
+                        <div
+                            class=" col-lg-5 col-md-12 col-sm-12 bg-white d-flex flex-column allpcard shadow-sm p-3 m-2">
+                            <div class="allpheading text-capitalize text-wrap pb-2 fs-5">IMAGE CAPTION GENERATOR USING
+                                CNN
+                                AND RNN
+                            </div>
+                            <div class="allpstudent pb-2"> By Student Name</div>
+                            <p class="allpabstract text-wrap">In the past few years, the problem of generating
+                                descriptive
+                                sentences automatically for images has garnered a rising interest in natural language
+                                processing and
+                                computer vision research. Image captioning is a fundam...</p>
+                            <div class="underline"></div>
+
+                            <div class="row allplower d-flex pt-2">
+                                <div class="col-md-6">
+                                    <i class='bx bxs-star'></i> 14
+                                </div>
+                                <div class="col-md-6 text-end allpview">
+                                    <a href="viewproject.html"
+                                        class="d-flex align-items-center justify-content-end">View
+                                        Project<i class='bx bx-right-arrow-alt bx-sm arrowvp'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card for project end -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top start -->
+        <div class="row d-flex justify-content-end top_btn fs-6 align-items-center">
+            <div class="col-1">
+                <a href="#top"><i class='bx bx-chevron-up bx-sm'></i>Top</a>
+            </div>
+        </div>
+        <!-- top end -->
+
+    </div>
+
+    </div>
+    <!-- container end-->
+
+    <!-- footer start -->
+    <div class="row footer mt-4">
+        <div class="col-md-12 d-flex justify-content-center">
+            Copyright © 2022 Deerwalk. All rights reserved.
+        </div>
+    </div>
+    <!-- footer end -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#filterbtntoggle").click(function () {
+                $(".filter_section_mobile").show();
+            });
+            $("#cross").click(function () {
+                $(".filter_section_mobile").hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $('#view_all').click(function () {
+                $("#all_colleges").show();
+                $("#view_all").hide();
+                $("#view_less").show();
+                // $(".categories_colleges").addClass("overflow-auto");
+            });
+            $("#view_less").hide();
+            $('#view_less').click(function () {
+                $("#all_colleges").hide();
+                $("#view_less").hide();
+                $("#view_all").show();
+            });
+
+
+        })
+    </script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
