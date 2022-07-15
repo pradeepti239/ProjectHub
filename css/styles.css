@@ -410,8 +410,8 @@ color: var(--primary_color);
 }
 
 .college_logo {
-    height: auto;
-    /* width: 35%; */
+    /* height: auto; */
+    width: 35%;
 }
 
 /* view all colleges end */
