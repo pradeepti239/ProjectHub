@@ -53,7 +53,8 @@
 .search_form:hover .search_txt,
 .search_form:valid .search_txt{
     background: white;
-    color: var(--primary_color)
+    color: var(--primary_color);
+    border: 1px solid var(--primary_color);
 }
 
 /* search in nav end */
