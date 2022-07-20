@@ -117,6 +117,7 @@ body {
 /* for Navbar */
 
 .nav_bar {
+  position: relative !important;
   padding: 0 !important;
   color: var(--primary_color) !important;
 }
@@ -592,25 +593,21 @@ a {
 }
 
 .description_panel {
-  position: relative;
+  position: absolute;
+  bottom: -0px;
 }
 
 .sidedrawer {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.5rem;
+  overflow: hidden;
+
+  border-bottom-right-radius: 0.55rem;
   padding: 2rem 1rem 1rem 1rem;
   color: var(--primary_white);
-  top: 10vh;
-  height: calc(100vh - 6rem);
   position: absolute;
   z-index: 1000;
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  min-height: calc(100vh - 99px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: var(--primary_color);
-}
-
-.sidedrawer {
   transition: all ease-in-out 200ms;
 }
 
@@ -640,6 +637,7 @@ a {
 } */
 
 .sidedrawer_title {
+  word-wrap: break-word;
   font-weight: 300 !important;
 }
 
@@ -676,15 +674,21 @@ a {
 }
 
 .sidedrawer--inactive .description_section {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  /* display: none; */
+  transition: all ease-in-out 0ms;
 }
-
 .sidedrawer--inactive:hover {
   width: 15rem;
 }
-
 .sidedrawer--inactive:hover .description_section {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+  /* display: block; */
+  transition: all ease-in-out 900ms;
 }
 
 .sidedrawer--inactive:hover .sidedrawer_icon-wrapper {
@@ -701,12 +705,11 @@ a {
 }
 
 .sidedrawer_icon-wrapper {
-  height: 100%;
+  min-height: calc(90vh - 99px);
   align-items: center;
   animation-name: float;
   animation-duration: 2.4s;
   animation-iteration-count: infinite;
-  transition: all 3.8s;
 }
 
 .description_section label {
@@ -745,4 +748,22 @@ a {
   height: 0.2rem;
   background: var(--secondary_color);
 }
+
+/* .sidedrawer--active {
+  width: 15rem;
+}
+.sidedrawer--active .description_section {
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+  transition: all ease-in-out 900ms;
+}
+
+.sidedrawer--active .sidedrawer_icon-wrapper {
+  display: none;
+}
+.sidedrawer--active .sidedrawer_opener-icon {
+  display: none;
+}
+ */
 
