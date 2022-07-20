@@ -5,6 +5,7 @@
 }
 
 :root {
+  --primary_transparent: transparent;
   --primary_white: #ffffff;
   --primary_color: #0f5288;
   --secondary_color: #257fc9;
@@ -635,8 +636,8 @@ a {
   margin-top: 0.5rem;
   text-align: justify;
 }
-.sidedrawer_header {
-}
+/* .sidedrawer_header {
+} */
 
 .sidedrawer_title {
   font-weight: 300 !important;
@@ -703,7 +704,7 @@ a {
   height: 100%;
   align-items: center;
   animation-name: float;
-  animation-duration: 3.8s;
+  animation-duration: 2.4s;
   animation-iteration-count: infinite;
   transition: all 3.8s;
 }
@@ -723,6 +724,7 @@ a {
 
 .sidedrawer_social-container a {
   color: var(--primary_white);
+  border-bottom: 1px solid var(--primary_transparent);
 }
 .sidedrawer_social-container a:active {
   color: var(--primary_white);
@@ -736,5 +738,11 @@ a {
 #college_name,
 #college_location,
 #college_description {
+}
+
+.featured_underline {
+  width: 1.8rem;
+  height: 0.2rem;
+  background: var(--secondary_color);
 }
 
