@@ -1,22 +1,23 @@
 const collegeDataSets = {
   collegeData: [
     {
-      name: 'A',
-      location: 'Berkeley, CA',
+      name: 'The British College',
+      location: 'Trade Tower, Kathmandu 44600',
+      description: `
+      The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+      `,
+    },
+    {
+      name: 'Prime College',
+      location: 'Pahikwo Sadak, Kathmandu 44600',
       description:
         'In University of california we get lots of opportunity to learn many things and master our skills',
     },
     {
-      name: 'B',
-      location: 'Los Angeles, CA',
-      description:
-        'In University of california we get lots of opportunity to learn many things and master our skills',
-    },
-    {
-      name: 'C',
+      name: 'Unicorn College',
       location: 'Riverside, CA',
       description:
-        'In University of california we get lots of opportunity to learn many things and master our skills',
+        'With world-class faculty, groundbreaking research opportunities, and a commitment to a diverse environment of bright, talented students, ',
     },
   ],
 };
