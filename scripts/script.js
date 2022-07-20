@@ -1,3 +1,4 @@
+'use strict';
 const collegeDataSets = {
   collegeData: [
     {
@@ -29,7 +30,6 @@ const collegeDataSets = {
  * @param eventParams - 'mouseover' or 'mouseout'
  */
 const aside = document.getElementsByClassName('sidedrawer');
-console.log(aside[0]);
 
 const collegeCards = document.getElementsByClassName('college_cards');
 
@@ -40,16 +40,16 @@ function openNav(eventParams) {
       aside[0].classList.toggle('sidedrawer--active');
 
       // change content of aside
-      //set college name
+      //?set college name
       const collegeNameNode = document.getElementById('college-name');
       const newCollegeName = collegeDataSets.collegeData[i].name;
       collegeNameNode.innerHTML = `${newCollegeName}`;
-      //set college location
+      //?set college location
       const collegeLocationNode = document.getElementById('college-location');
       const newCollegeLocation = collegeDataSets.collegeData[i].location;
       collegeLocationNode.innerHTML = `${newCollegeLocation}`;
 
-      //set college description
+      //?set college description
       const collegeDescriptionNode = document.getElementById(
         'college-description'
       );
