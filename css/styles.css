@@ -16,6 +16,12 @@
   --light_primary: #f5fbff;
   --gray_color: #aeaeae;
   --light_gray: rgba(240, 240, 240, 0.671);
+
+  /* devices  */
+  --phone: 360px;
+  --tablet: 768px;
+  --desktop: 1366px;
+  --LGdesktop: 1920px;
 }
 
 /* search in nav start */
@@ -578,6 +584,21 @@ a {
 
 /* ================================= aside  */
 
+/* =====================custom scroll bar  */
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--primary-white);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary_color);
+  border: 2px solid var(--primary-white);
+}
+
 /* ======================== animation */
 
 @keyframes float {
@@ -599,7 +620,6 @@ a {
 
 .sidedrawer {
   overflow: hidden;
-
   border-bottom-right-radius: 0.55rem;
   padding: 2rem 1rem 1rem 1rem;
   color: var(--primary_white);
@@ -609,6 +629,12 @@ a {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: var(--primary_color);
   transition: all ease-in-out 200ms;
+}
+
+@media only screen and (max-width: 992px) {
+  .sidedrawer {
+    display: none !important;
+  }
 }
 
 .sidedrawer label {
