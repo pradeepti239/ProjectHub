@@ -24,6 +24,13 @@
   --LGdesktop: 1920px;
 }
 
+/* disable selection in document */
+body {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 /* search in nav start */
 .search_form .search_txt {
   height: 42.5px;
@@ -619,6 +626,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidedrawer {
+  text-align: justify;
+
   overflow: hidden;
   border-bottom-right-radius: 0.55rem;
   padding: 2rem 1rem 1rem 1rem;
@@ -633,7 +642,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 992px) {
   .sidedrawer {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -657,7 +666,6 @@ body::-webkit-scrollbar-thumb {
 
 .sidedrawer label p {
   margin-top: 0.5rem;
-  text-align: justify;
 }
 /* .sidedrawer_header {
 } */
@@ -764,10 +772,10 @@ body::-webkit-scrollbar-thumb {
   color: var(--secondary_color);
 }
 
-#college_name,
+/* #college_name,
 #college_location,
 #college_description {
-}
+} */
 
 .featured_underline {
   width: 1.8rem;
@@ -775,7 +783,7 @@ body::-webkit-scrollbar-thumb {
   background: var(--secondary_color);
 }
 
-/* .sidedrawer--active {
+.sidedrawer--active {
   width: 15rem;
 }
 .sidedrawer--active .description_section {
@@ -791,5 +799,8 @@ body::-webkit-scrollbar-thumb {
 .sidedrawer--active .sidedrawer_opener-icon {
   display: none;
 }
- */
+
+.card:hover {
+  border: 1px solid var(--primary_color);
+}
 
