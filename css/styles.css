@@ -626,8 +626,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidedrawer {
-  text-align: justify;
-
+  /* ! */
+  /* text-align: justify; */
   overflow: hidden;
   border-bottom-right-radius: 0.55rem;
   padding: 2rem 1rem 1rem 1rem;
@@ -679,14 +679,15 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
   color: var(--primary_white);
 }
-
-.sidedrawer--active {
-  display: block;
-  visibility: visible;
+/* only show nav as block for port > 992 */
+@media only screen and (min-width: 992px) {
+  .sidedrawer--active {
+    display: block;
+    visibility: visible;
+  }
 }
 
 .sidedrawer--inactive {
-  cursor: pointer;
   width: 3rem;
 }
 
@@ -786,6 +787,7 @@ body::-webkit-scrollbar-thumb {
 .sidedrawer--active {
   width: 15rem;
 }
+
 .sidedrawer--active .description_section {
   visibility: visible;
   opacity: 1;
