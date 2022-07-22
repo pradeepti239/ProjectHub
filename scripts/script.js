@@ -1,14 +1,12 @@
-'use strict';
-
-
+"use strict";
 
 // data set for viewallcolleges.html
 
 const allCollegesDataSet = [
   {
-    name: 'Prime College',
-    logoUrl: './images/college-logos/prime-college.png',
-    location: 'British Tower, Kathmandu 44600',
+    name: "Prime College",
+    logoUrl: "./images/college-logos/prime-college.png",
+    location: "British Tower, Kathmandu 44600",
     description: `
     The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
     `,
@@ -18,32 +16,9 @@ const allCollegesDataSet = [
     // websiteUrl: ' https://website.com',
   },
   {
-    name: 'British College',
-    logoUrl: './images/college-logos/british-college.png',
-    location: 'British Tower, Kathmandu 44600',
-    description: `
-    The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
-    `,
-    // facebookUrl: 'https://www.facebook.com',
-    // linkedInUrl: "https://www.linkedin.com",
-    // instagramUrl: 'https://www.instagram.com',
-    // websiteUrl: ' https://website.com',
-  },  {
-    name: 'Prime College',
-    logoUrl: './images/college-logos/prime-college.png',
-    location: 'British Tower, Kathmandu 44600',
-    description: `
-    The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
-    `,
-    // facebookUrl: 'https://www.facebook.com',
-    // linkedInUrl: null,
-    // instagramUrl: 'https://www.instagram.com',
-    // websiteUrl: ' https://website.com',
-  },
-  {
-    name: 'British College',
-    logoUrl: './images/college-logos/british-college.png',
-    location: 'British Tower, Kathmandu 44600',
+    name: "British College",
+    logoUrl: "./images/college-logos/british-college.png",
+    location: "British Tower, Kathmandu 44600",
     description: `
     The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
     `,
@@ -53,9 +28,9 @@ const allCollegesDataSet = [
     // websiteUrl: ' https://website.com',
   },
   {
-    name: 'Prime College',
-    logoUrl: './images/college-logos/prime-college.png',
-    location: 'British Tower, Kathmandu 44600',
+    name: "Prime College",
+    logoUrl: "./images/college-logos/prime-college.png",
+    location: "British Tower, Kathmandu 44600",
     description: `
     The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
     `,
@@ -65,9 +40,9 @@ const allCollegesDataSet = [
     // websiteUrl: ' https://website.com',
   },
   {
-    name: 'British College',
-    logoUrl: './images/college-logos/british-college.png',
-    location: 'British Tower, Kathmandu 44600',
+    name: "British College",
+    logoUrl: "./images/college-logos/british-college.png",
+    location: "British Tower, Kathmandu 44600",
     description: `
     The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
     `,
@@ -77,9 +52,9 @@ const allCollegesDataSet = [
     // websiteUrl: ' https://website.com',
   },
   {
-    name: 'Prime College',
-    logoUrl: './images/college-logos/prime-college.png',
-    location: 'British Tower, Kathmandu 44600',
+    name: "Prime College",
+    logoUrl: "./images/college-logos/prime-college.png",
+    location: "British Tower, Kathmandu 44600",
     description: `
     The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
     `,
@@ -89,9 +64,9 @@ const allCollegesDataSet = [
     // websiteUrl: ' https://website.com',
   },
   {
-    name: 'British College',
-    logoUrl: './images/college-logos/british-college.png',
-    location: 'British Tower, Kathmandu 44600',
+    name: "British College",
+    logoUrl: "./images/college-logos/british-college.png",
+    location: "British Tower, Kathmandu 44600",
     description: `
     The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
     `,
@@ -101,9 +76,9 @@ const allCollegesDataSet = [
     // websiteUrl: ' https://website.com',
   },
   {
-    name: 'Prime College',
-    logoUrl: './images/college-logos/prime-college.png',
-    location: 'British Tower, Kathmandu 44600',
+    name: "Prime College",
+    logoUrl: "./images/college-logos/prime-college.png",
+    location: "British Tower, Kathmandu 44600",
     description: `
     The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
     `,
@@ -112,35 +87,54 @@ const allCollegesDataSet = [
     // instagramUrl: 'https://www.instagram.com',
     // websiteUrl: ' https://website.com',
   },
- 
- 
-]
+  {
+    name: "British College",
+    logoUrl: "./images/college-logos/british-college.png",
+    location: "British Tower, Kathmandu 44600",
+    description: `
+    The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+    `,
+    // facebookUrl: 'https://www.facebook.com',
+    // linkedInUrl: "https://www.linkedin.com",
+    // instagramUrl: 'https://www.instagram.com',
+    // websiteUrl: ' https://website.com',
+  },
+  {
+    name: "Prime College",
+    logoUrl: "./images/college-logos/prime-college.png",
+    location: "British Tower, Kathmandu 44600",
+    description: `
+    The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+    `,
+    // facebookUrl: 'https://www.facebook.com',
+    // linkedInUrl: null,
+    // instagramUrl: 'https://www.instagram.com',
+    // websiteUrl: ' https://website.com',
+  },
+];
 
-
-
-
-// 
+//
 const collegeDataSets = {
   defaultCollegeData: {
-    name: 'Deerwalk Developer College',
-    logoUrl: './images/college-logos/deerwalk-college.png',
-    location: 'Deerwalk, Illinois',
+    name: "Deerwalk Developer College",
+    logoUrl: "./images/college-logos/deerwalk-college.png",
+    location: "Deerwalk, Illinois",
     description: `
     Deerwalk Institute of Technology is a private college established in 2010 in collaboration between Nepalese entrepreneurs and the United States-based software company, Deerwalk Inc. It is an affiliation to Tribhuvan University, which is the oldest University in Nepal. 
     
 
   `,
 
-    // facebookUrl: 'https://www.facebook.com',
-    // linkedInUrl: 'https://www.linkedin.com',
-    // instagramUrl: 'https://www.instagram.com',
-    // websiteUrl: ' https://website.com',
+    facebookUrl: "https://www.facebook.com",
+    linkedInUrl: "https://www.linkedin.com",
+    instagramUrl: "https://www.instagram.com",
+    websiteUrl: " https://website.com",
   },
   collegeData: [
     {
-      name: 'The British College',
-      logoUrl: './images/college-logos/british-college.png',
-      location: 'Trade Tower, Kathmandu 44600',
+      name: "The British College",
+      logoUrl: "./images/college-logos/british-college.png",
+      location: "Trade Tower, Kathmandu 44600",
       description: `
       
       
@@ -154,9 +148,9 @@ const collegeDataSets = {
       // websiteUrl: ' https://website.com',
     },
     {
-      name: 'Prime College',
-      logoUrl: './images/college-logos/prime-college.png',
-      location: 'Pahikwo Sadak, Kathmandu 44600',
+      name: "Prime College",
+      logoUrl: "./images/college-logos/prime-college.png",
+      location: "Pahikwo Sadak, Kathmandu 44600",
       description: `
       Prime College is an information technology, management, and science college in Nayabazar Kathmandu, Nepal, established in 2001. The college offers courses for BBA, BIM, BBS B.Sc. and CCNA.  
       `,
@@ -167,10 +161,10 @@ const collegeDataSets = {
       // websiteUrl: ' https://website.com',
     },
     {
-      name: 'The British College',
-      logoUrl: './images/college-logos/british-college.png',
+      name: "The British College",
+      logoUrl: "./images/college-logos/british-college.png",
 
-      location: 'Trade Tower, Kathmandu 44600',
+      location: "Trade Tower, Kathmandu 44600",
       description: `
       
       
@@ -192,28 +186,26 @@ const collegeDataSets = {
  * type.
  * @param eventParams - 'mouseover' or 'mouseout'
  */
-const aside = document.getElementsByClassName('sidedrawer');
+const aside = document.getElementsByClassName("sidedrawer");
 
-const collegeCards = document.getElementsByClassName('college_cards');
+const collegeCards = document.getElementsByClassName("college_cards");
 
-console.log(collegeCards)
-console.log(collegeCards.length)
+console.log(collegeCards);
+console.log(collegeCards.length);
 
 function openNav(eventParams) {
-  
-  
-  if(collegeCards.length<=3){
+  if (collegeCards.length <= 3) {
     for (let i = 0; i < collegeCards.length; i++) {
       collegeCards[i].addEventListener(eventParams, function () {
-        aside[0].classList.toggle('sidedrawer--inactive');
-        aside[0].classList.toggle('sidedrawer--active');
-  
+        aside[0].classList.toggle("sidedrawer--inactive");
+        aside[0].classList.toggle("sidedrawer--active");
+
         setDataInAside(
           collegeDataSets.collegeData[i].name,
           collegeDataSets.collegeData[i].location,
           collegeDataSets.collegeData[i].description
         );
-  
+
         setLinkInAside(
           collegeDataSets.collegeData[i].facebookUrl,
           collegeDataSets.collegeData[i].linkedInUrl,
@@ -223,19 +215,18 @@ function openNav(eventParams) {
         setImgInAside(collegeDataSets.collegeData[i].logoUrl);
       });
     }
-
-  }else{
+  } else {
     for (let i = 0; i < collegeCards.length; i++) {
       collegeCards[i].addEventListener(eventParams, function () {
-        aside[0].classList.toggle('sidedrawer--inactive');
-        aside[0].classList.toggle('sidedrawer--active');
-  
+        aside[0].classList.toggle("sidedrawer--inactive");
+        aside[0].classList.toggle("sidedrawer--active");
+
         setDataInAside(
           allCollegesDataSet[i].name,
           allCollegesDataSet[i].location,
           allCollegesDataSet[i].description
         );
-  
+
         setLinkInAside(
           allCollegesDataSet[i].facebookUrl,
           allCollegesDataSet[i].linkedInUrl,
@@ -245,18 +236,17 @@ function openNav(eventParams) {
         setImgInAside(allCollegesDataSet[i].logoUrl);
       });
     }
-    
   }
 }
 
-openNav('mouseover');
-openNav('mouseout');
+openNav("mouseover");
+openNav("mouseout");
 
 //  set default college data when directly  hovered in navbar
 
 document
-  .getElementsByClassName('sidedrawer')[0]
-  .addEventListener('mouseover', function () {
+  .getElementsByClassName("sidedrawer")[0]
+  .addEventListener("mouseover", function () {
     setDataInAside(
       collegeDataSets.defaultCollegeData.name,
       collegeDataSets.defaultCollegeData.location,
@@ -283,20 +273,19 @@ document
  * System. The University of Texas was inducted into the Association of American Universities in 1929,
  * becoming only the third university in the American South
  */
-const setDataInAside = (
-  nameParam, locationParam, descriptionParam) => {
+const setDataInAside = (nameParam, locationParam, descriptionParam) => {
   // change content of aside
   //?set college name
-  const collegeNameNode = document.getElementById('college-name');
+  const collegeNameNode = document.getElementById("college-name");
   const newCollegeName = nameParam;
   collegeNameNode.innerHTML = `${newCollegeName}`;
   //?set college location
-  const collegeLocationNode = document.getElementById('college-location');
+  const collegeLocationNode = document.getElementById("college-location");
   const newCollegeLocation = locationParam;
   collegeLocationNode.innerHTML = `${newCollegeLocation}`;
 
   //?set college description
-  const collegeDescriptionNode = document.getElementById('college-description');
+  const collegeDescriptionNode = document.getElementById("college-description");
   const newCollegeDescription = descriptionParam;
   collegeDescriptionNode.innerHTML = `${newCollegeDescription}`;
 };
@@ -307,37 +296,37 @@ const setLinkInAside = (
   instagramLinkParam = null,
   websiteLinkParam = null
 ) => {
-  const facebookLink = document.getElementById('facebook_link');
-  const linkedInLink = document.getElementById('linkedin_link');
-  const instLink = document.getElementById('instagram_link');
-  const websiteLink = document.getElementById('website_link');
+  const facebookLink = document.getElementById("facebook_link");
+  const linkedInLink = document.getElementById("linkedin_link");
+  const instLink = document.getElementById("instagram_link");
+  const websiteLink = document.getElementById("website_link");
 
   // console.log(facebookLink);
   //change attribute of anchor tag of icons in aside
   // hiden  icon if  link is null
   if (facebookLinkParam === null) {
-    facebookLink.style.display = 'none';
+    facebookLink.style.display = "none";
   } else {
     facebookLink.href = facebookLinkParam;
-    facebookLink.style.display = 'block';
+    facebookLink.style.display = "block";
   }
   if (linkedInLinkParam === null) {
-    linkedInLink.style.display = 'none';
+    linkedInLink.style.display = "none";
   } else {
     linkedInLink.href = facebookLinkParam;
-    linkedInLink.style.display = 'block';
+    linkedInLink.style.display = "block";
   }
   if (instagramLinkParam === null) {
-    instLink.style.display = 'none';
+    instLink.style.display = "none";
   } else {
     instLink.href = facebookLinkParam;
-    instLink.style.display = 'block';
+    instLink.style.display = "block";
   }
   if (websiteLinkParam === null) {
-    websiteLink.style.display = 'none';
+    websiteLink.style.display = "none";
   } else {
     websiteLink.href = facebookLinkParam;
-    websiteLink.style.display = 'block';
+    websiteLink.style.display = "block";
   }
 };
 
@@ -347,7 +336,6 @@ const setLinkInAside = (
  * @param logoLocation - the location of the image you want to use.
  */
 const setImgInAside = (logoLocation) => {
-  const logoImgNode = document.getElementById('sidedrawer-logo');
+  const logoImgNode = document.getElementById("sidedrawer-logo");
   logoImgNode.src = logoLocation;
 };
-
