@@ -876,7 +876,6 @@ body::-webkit-scrollbar-thumb {
 
 .right-panel {
   width: 15rem;
-  background: red;
   cursor: pointer;
   position: absolute;
   right: 0rem;
@@ -891,9 +890,9 @@ body {
   left: 12rem; /* shift to right wrt to .right-panel positioned  */
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.55rem;
   width: 15rem;
   overflow: hidden;
-  border-bottom-right-radius: 0.55rem;
   padding: 2rem 1rem;
   color: var(--secondary_color);
   z-index: 1000;
@@ -901,6 +900,7 @@ body {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: var(--primary_color);
   transition: all ease-in-out 300ms;
+  border: 1px solid var(--light_gray);
 }
 .right-sidedrawer:hover {
   transition: all ease-in-out 200ms;
