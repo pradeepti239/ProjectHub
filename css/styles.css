@@ -1080,8 +1080,3 @@ color:var(--gray_color);
 
 
 
-@media only screen and (min-width:1000px){
-  body{
-    overflow-y:hidden;
-  }
-}
