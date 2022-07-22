@@ -627,7 +627,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidedrawer {
-  /* ! */
   text-align: justify;
   overflow: hidden;
   border-bottom-right-radius: 0.55rem;
@@ -673,8 +672,6 @@ body::-webkit-scrollbar-thumb {
 .sidedrawer label p {
   margin-top: 0.5rem;
 }
-/* .sidedrawer_header {
-} */
 
 .sidedrawer_title {
   word-wrap: break-word;
@@ -724,8 +721,6 @@ body::-webkit-scrollbar-thumb {
 .sidedrawer--inactive:hover {
   width: 15rem;
 }
-
-/* //! */
 
 @media only screen and (max-width: 1752px) {
   .sidedrawer--inactive:hover {
@@ -802,11 +797,6 @@ body::-webkit-scrollbar-thumb {
   color: var(--secondary_color);
 }
 
-/* #college_name,
-#college_location,
-#college_description {
-} */
-
 .featured_underline {
   width: 1.8rem;
   height: 0.2rem;
@@ -814,7 +804,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidedrawer--active {
-  /* width: 12rem; */
   width: 15rem;
 }
 
@@ -862,7 +851,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media (max-width: 960px) {
   .w-75 {
-    width: 75% !important;
+    width: 95% !important;
   }
 }
 
@@ -984,7 +973,6 @@ body {
 .share_circle {
   height: 4rem;
   width: 4rem;
-  /* border-radius: 50%; */
   border: 1px solid var(--stroke_color);
   margin: 0.25rem;
   display: flex;
@@ -1008,7 +996,6 @@ body {
 }
 
 /* landing screen - feat-project container */
-
 .feat-project_container {
   display: flex;
 }
@@ -1027,8 +1014,6 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.125);
   background-color: var(--primary_white);
   border-radius: 0.15rem;
-
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 .feat-project_container .feat-project header {
 }
