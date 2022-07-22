@@ -868,6 +868,12 @@ body::-webkit-scrollbar-thumb {
 
 /* =========================== right side project  */
 
+@media only screen and (max-width: 1200px) {
+  .right-panel {
+    display: none;
+  }
+}
+
 .right-panel {
   width: 15rem;
   background: red;
