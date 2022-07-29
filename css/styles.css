@@ -1,4 +1,4 @@
-/* devices  */
+/* devices view-port */
 /* --phone: 360px;
   --tablet: 768px;
   --desktop: 1366px;
@@ -1068,7 +1068,7 @@ body {
   display: block;
   display: -webkit-box;
   max-width: 400px;
-  -webkit-line-clamp: 4; /* max line number */
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
