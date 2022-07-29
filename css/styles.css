@@ -1041,3 +1041,22 @@ body {
   text-align: center;
   color: var(--gray_color);
 }
+
+/* =========================== fixes on college card img overflow */
+.college_cards {
+  min-height: 15rem;
+}
+
+.img_container {
+  height: 5rem;
+  width: fit-content;
+}
+
+.img_container .img-block {
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
+  height: 100%;
+}
+
+.img_container .img-block img {
+  height: 100%;
+}

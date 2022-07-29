@@ -10,7 +10,7 @@ const allCollegesDataSet = [
     description: `
     The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
     `,
-    // facebookUrl: 'https://www.facebook.com',
+    facebookUrl: "https://www.facebook.com",
     // linkedInUrl: null,
     // instagramUrl: 'https://www.instagram.com',
     // websiteUrl: ' https://website.com',
