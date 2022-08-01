@@ -42,12 +42,15 @@
 
           <section class="description_section">
             <header class="sidedrawer_header">
-              <img
-                id="sidedrawer-logo"
-                class="sidedrawer_header_logo"
-                src="./images/college-logos/british-college.png"
-                alt=""
-              />
+              <div class="sidedrawer-logo-container">
+                <img
+                  id="sidedrawer-logo"
+                  class="sidedrawer_header_logo"
+                  src="./images/college-logos/british-college.png"
+                  alt=""
+                />
+              </div>
+
               <h3 class="sidedrawer_title">
                 <!-- <i class="bx bxs-bookmark-alt"></i>
               Description -->
@@ -75,7 +78,7 @@
             </label>
             <br />
 
-            <label for="college_location">
+            <label id="college_description_division" for="college_location">
               <span id="college_description">
                 Description:
 
@@ -166,19 +169,19 @@
         data-aos="zoom-out"
         class="row college_card mx-auto justify-content-center"
       >
-        <!-- card 1 -->
+        <!--//? card 1 -->
         <div
           class="college_cards col-md-3 m-2 bg-white shadow-sm p-4 d-flex flex-column align-items-center justify-content-center"
         >
           <div class="mb-2 d-flex justify-content-center">
             <img
-              class="college_logo"
+              class="college_logo card-img-top"
               src="./images/collegelogo2.jpg"
               alt="College logo"
             />
           </div>
-          <div class="mb-2">Prime College</div>
-          <div class="mb-2">Nayabazar, Kathmandu</div>
+          <div class="mb-2 college_title_home">Test</div>
+          <div class="mb-2 college_address_home">Nayabazar, Kathmandu</div>
           <div class="btn btnblue p-1">
             <a
               href="allprojects.html"
@@ -187,38 +190,21 @@
             >
           </div>
         </div>
+
+        <!-- //?  card 2 -->
+
         <div
           class="college_cards col-md-3 m-2 bg-white shadow-sm p-4 d-flex flex-column align-items-center justify-content-center"
         >
           <div class="mb-2 d-flex justify-content-center">
             <img
-              class="college_logo"
-              src="./images/britishCollegelogo.jpg"
-              alt="College logo"
-            />
-          </div>
-          <div class="mb-2">The British College</div>
-          <div class="mb-2">Thapathali, Kathmandu</div>
-          <div class="btn btnblue p-1">
-            <a
-              href="allprojects.html"
-              style="text-decoration: none; color: white"
-              >View Projects</a
-            >
-          </div>
-        </div>
-        <div
-          class="college_cards col-md-3 m-2 bg-white shadow-sm p-4 d-flex flex-column align-items-center justify-content-center"
-        >
-          <div class="mb-2 d-flex justify-content-center">
-            <img
-              class="college_logo"
+              class="college_logo card-img-top"
               src="./images/collegelogo2.jpg"
               alt="College logo"
             />
           </div>
-          <div class="mb-2">Prime College</div>
-          <div class="mb-2">Nayabazar, Kathmandu</div>
+          <div class="mb-2 college_title_home">Test 2</div>
+          <div class="mb-2 college_address_home">Nayabazar, Kathmandu</div>
           <div class="btn btnblue p-1">
             <a
               href="allprojects.html"
@@ -227,120 +213,21 @@
             >
           </div>
         </div>
+
+        <!-- //? card 3 -->
+
         <div
           class="college_cards col-md-3 m-2 bg-white shadow-sm p-4 d-flex flex-column align-items-center justify-content-center"
         >
           <div class="mb-2 d-flex justify-content-center">
             <img
-              class="college_logo"
-              src="./images/britishCollegelogo.jpg"
+              class="college_logo card-img-top"
+              src="./images/college-logos/test.png"
               alt="College logo"
             />
           </div>
-          <div class="mb-2">The British College</div>
-          <div class="mb-2">Thapathali, Kathmandu</div>
-          <div class="btn btnblue p-1">
-            <a
-              href="allprojects.html"
-              style="text-decoration: none; color: white"
-              >View Projects</a
-            >
-          </div>
-        </div>
-        <!-- </div>
-        <div class="row college_card mt-4"> -->
-        <div
-          class="college_cards col-md-3 m-2 bg-white shadow-sm p-4 d-flex flex-column align-items-center justify-content-center"
-        >
-          <div class="mb-2 d-flex justify-content-center">
-            <img
-              class="college_logo"
-              src="./images/collegelogo2.jpg"
-              alt="College logo"
-            />
-          </div>
-          <div class="m-2">Prime College</div>
-          <div class="mb-4">Nayabazar, Kathmandu</div>
-          <div class="btn btnblue p-1">
-            <a
-              href="allprojects.html"
-              style="text-decoration: none; color: white"
-              >View Projects</a
-            >
-          </div>
-        </div>
-        <div
-          class="college_cards col-md-3 m-2 bg-white shadow-sm p-4 d-flex flex-column align-items-center justify-content-center"
-        >
-          <div class="mb-2 d-flex justify-content-center">
-            <img
-              class="college_logo"
-              src="./images/britishCollegelogo.jpg"
-              alt="College logo"
-            />
-          </div>
-          <div class="mb-2">The British College</div>
-          <div class="mb-2">Thapathali, Kathmandu</div>
-          <div class="btn btnblue p-1">
-            <a
-              href="allprojects.html"
-              style="text-decoration: none; color: white"
-              >View Projects</a
-            >
-          </div>
-        </div>
-        <div
-          class="college_cards col-md-3 m-2 bg-white shadow-sm p-4 d-flex flex-column align-items-center justify-content-center"
-        >
-          <div class="mb-2 d-flex justify-content-center">
-            <img
-              class="college_logo"
-              src="./images/collegelogo2.jpg"
-              alt="College logo"
-            />
-          </div>
-          <div class="m-2">Prime College</div>
-          <div class="mb-4">Nayabazar, Kathmandu</div>
-          <div class="btn btnblue p-1">
-            <a
-              href="allprojects.html"
-              style="text-decoration: none; color: white"
-              >View Projects</a
-            >
-          </div>
-        </div>
-        <div
-          class="college_cards col-md-3 m-2 bg-white shadow-sm p-4 d-flex flex-column align-items-center justify-content-center"
-        >
-          <div class="mb-2 d-flex justify-content-center">
-            <img
-              class="college_logo"
-              src="./images/britishCollegelogo.jpg"
-              alt="College logo"
-            />
-          </div>
-          <div class="mb-2">The British College</div>
-          <div class="mb-2">Thapathali, Kathmandu</div>
-          <div class="btn btnblue p-1">
-            <a
-              href="allprojects.html"
-              style="text-decoration: none; color: white"
-              >View Projects</a
-            >
-          </div>
-        </div>
-        <div
-          class="college_cards col-md-3 m-2 bg-white shadow-sm p-4 d-flex flex-column align-items-center justify-content-center"
-        >
-          <div class="mb-2 d-flex justify-content-center">
-            <img
-              class="college_logo"
-              src="./images/collegelogo2.jpg"
-              alt="College logo"
-            />
-          </div>
-          <div class="m-2">Prime College</div>
-          <div class="mb-4">Nayabazar, Kathmandu</div>
+          <div class="mb-2 college_title_home">Test 2</div>
+          <div class="mb-2 college_address_home">Nayabazar, Kathmandu</div>
           <div class="btn btnblue p-1">
             <a
               href="allprojects.html"

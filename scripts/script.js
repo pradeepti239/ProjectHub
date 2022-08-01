@@ -7,10 +7,10 @@ const allCollegesDataSet = [
     name: "Prime College",
     logoUrl: "./images/college-logos/prime-college.png",
     location: "British Tower, Kathmandu 44600",
-    description: `
-    The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
-    `,
-    facebookUrl: "https://www.facebook.com",
+    // description: `
+    // The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+    // `,
+    // facebookUrl: "https://www.facebook.com",
     // linkedInUrl: null,
     // instagramUrl: 'https://www.instagram.com',
     // websiteUrl: ' https://website.com',
@@ -19,9 +19,9 @@ const allCollegesDataSet = [
     name: "British College",
     logoUrl: "./images/college-logos/british-college.png",
     location: "British Tower, Kathmandu 44600",
-    description: `
-    The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
-    `,
+    // description: `
+    // The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+    // `,
     // facebookUrl: 'https://www.facebook.com',
     // linkedInUrl: "https://www.linkedin.com",
     // instagramUrl: 'https://www.instagram.com',
@@ -31,9 +31,9 @@ const allCollegesDataSet = [
     name: "Prime College",
     logoUrl: "./images/college-logos/prime-college.png",
     location: "British Tower, Kathmandu 44600",
-    description: `
-    The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
-    `,
+    // description: `
+    // The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+    // `,
     // facebookUrl: 'https://www.facebook.com',
     // linkedInUrl: null,
     // instagramUrl: 'https://www.instagram.com',
@@ -43,9 +43,9 @@ const allCollegesDataSet = [
     name: "British College",
     logoUrl: "./images/college-logos/british-college.png",
     location: "British Tower, Kathmandu 44600",
-    description: `
-    The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
-    `,
+    // description: `
+    // The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+    // `,
     // facebookUrl: 'https://www.facebook.com',
     // linkedInUrl: "https://www.linkedin.com",
     // instagramUrl: 'https://www.instagram.com',
@@ -55,9 +55,9 @@ const allCollegesDataSet = [
     name: "Prime College",
     logoUrl: "./images/college-logos/prime-college.png",
     location: "British Tower, Kathmandu 44600",
-    description: `
-    The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
-    `,
+    // description: `
+    // The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+    // `,
     // facebookUrl: 'https://www.facebook.com',
     // linkedInUrl: null,
     // instagramUrl: 'https://www.instagram.com',
@@ -67,9 +67,9 @@ const allCollegesDataSet = [
     name: "British College",
     logoUrl: "./images/college-logos/british-college.png",
     location: "British Tower, Kathmandu 44600",
-    description: `
-    The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
-    `,
+    // description: `
+    // The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+    // `,
     // facebookUrl: 'https://www.facebook.com',
     // linkedInUrl: "https://www.linkedin.com",
     // instagramUrl: 'https://www.instagram.com',
@@ -79,9 +79,9 @@ const allCollegesDataSet = [
     name: "Prime College",
     logoUrl: "./images/college-logos/prime-college.png",
     location: "British Tower, Kathmandu 44600",
-    description: `
-    The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
-    `,
+    // description: `
+    // The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+    // `,
     // facebookUrl: 'https://www.facebook.com',
     // linkedInUrl: null,
     // instagramUrl: 'https://www.instagram.com',
@@ -91,9 +91,9 @@ const allCollegesDataSet = [
     name: "British College",
     logoUrl: "./images/college-logos/british-college.png",
     location: "British Tower, Kathmandu 44600",
-    description: `
-    The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
-    `,
+    // description: `
+    // The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+    // `,
     // facebookUrl: 'https://www.facebook.com',
     // linkedInUrl: "https://www.linkedin.com",
     // instagramUrl: 'https://www.instagram.com',
@@ -103,9 +103,9 @@ const allCollegesDataSet = [
     name: "Prime College",
     logoUrl: "./images/college-logos/prime-college.png",
     location: "British Tower, Kathmandu 44600",
-    description: `
-    The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
-    `,
+    // description: `
+    // The Prime College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+    // `,
     // facebookUrl: 'https://www.facebook.com',
     // linkedInUrl: null,
     // instagramUrl: 'https://www.instagram.com',
@@ -135,13 +135,11 @@ const collegeDataSets = {
       name: "The British College",
       logoUrl: "./images/college-logos/british-college.png",
       location: "Trade Tower, Kathmandu 44600",
-      description: `
-      
-      
-      The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+      // description: `
 
+      // The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
 
-      `,
+      // `,
       // facebookUrl: 'https://www.facebook.com',
       // linkedInUrl: null,
       // instagramUrl: 'https://www.instagram.com',
@@ -151,9 +149,9 @@ const collegeDataSets = {
       name: "Prime College",
       logoUrl: "./images/college-logos/prime-college.png",
       location: "Pahikwo Sadak, Kathmandu 44600",
-      description: `
-      Prime College is an information technology, management, and science college in Nayabazar Kathmandu, Nepal, established in 2001. The college offers courses for BBA, BIM, BBS B.Sc. and CCNA.  
-      `,
+      // description: `
+      // Prime College is an information technology, management, and science college in Nayabazar Kathmandu, Nepal, established in 2001. The college offers courses for BBA, BIM, BBS B.Sc. and CCNA.
+      // `,
 
       // facebookUrl: 'https://www.facebook.com',
       // linkedInUrl: 'https://www.linkedin.com',
@@ -165,13 +163,11 @@ const collegeDataSets = {
       logoUrl: "./images/college-logos/british-college.png",
 
       location: "Trade Tower, Kathmandu 44600",
-      description: `
-      
-      
-      The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
+      // description: `
 
+      // The British College is an independent institution located in Trade Tower Business Center Thapathali, Kathmandu.It offers British and international qualifications.
 
-      `,
+      // `,
       // facebookUrl: 'https://www.facebook.com',
       // linkedInUrl: null,
       // instagramUrl: 'https://www.instagram.com',
@@ -200,19 +196,32 @@ function openNav(eventParams) {
         aside[0].classList.toggle("sidedrawer--inactive");
         aside[0].classList.toggle("sidedrawer--active");
 
+        const extraCollegeCard =
+          document.getElementsByClassName("college_cards");
+
+        console.log("🅰️", extraCollegeCard);
+
+        console.log(extraCollegeCard[i]);
+
+        const collegeImageDataValue =
+          extraCollegeCard[i].getElementsByClassName("card-img-top")[0];
+        const collegeNameDataValue =
+          extraCollegeCard[i].getElementsByClassName("college_title_home")[0];
+        const collegeLocationDataValue = extraCollegeCard[
+          i
+        ].getElementsByClassName("college_address_home")[0];
+
+        console.log("🅰️🅰️🅰️🅰️🅰️", collegeNameDataValue.innerHTML);
+        console.log("🅰️🅰️🅰️🅰️🅰️", collegeLocationDataValue.innerHTML);
+        console.log("🅰️🅰️🅰️🅰️🅰️", collegeImageDataValue.src);
+
         setDataInAside(
-          collegeDataSets.collegeData[i].name,
-          collegeDataSets.collegeData[i].location,
-          collegeDataSets.collegeData[i].description
+          collegeNameDataValue.innerHTML,
+          collegeLocationDataValue.innerHTML
         );
 
-        setLinkInAside(
-          collegeDataSets.collegeData[i].facebookUrl,
-          collegeDataSets.collegeData[i].linkedInUrl,
-          collegeDataSets.collegeData[i].instagramUrl,
-          collegeDataSets.collegeData[i].websiteUrl
-        );
-        setImgInAside(collegeDataSets.collegeData[i].logoUrl);
+        setLinkInAside(undefined, undefined, undefined, undefined);
+        setImgInAside(collegeImageDataValue.src);
       });
     }
   } else {
@@ -273,7 +282,11 @@ document
  * System. The University of Texas was inducted into the Association of American Universities in 1929,
  * becoming only the third university in the American South
  */
-const setDataInAside = (nameParam, locationParam, descriptionParam) => {
+const setDataInAside = (
+  nameParam,
+  locationParam,
+  descriptionParam = undefined
+) => {
   // change content of aside
   //?set college name
   const collegeNameNode = document.getElementById("college-name");
@@ -286,6 +299,17 @@ const setDataInAside = (nameParam, locationParam, descriptionParam) => {
 
   //?set college description
   const collegeDescriptionNode = document.getElementById("college-description");
+
+  const collegeDescriptionSectionNode = document.getElementById(
+    "college_description_division"
+  );
+
+  if (descriptionParam === null || descriptionParam === undefined) {
+    collegeDescriptionSectionNode.style.display = "none";
+  } else {
+    collegeDescriptionSectionNode.style.display = "block";
+  }
+
   const newCollegeDescription = descriptionParam;
   collegeDescriptionNode.innerHTML = `${newCollegeDescription}`;
 };
