@@ -1073,3 +1073,11 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.sidedrawer-logo-container {
+  height: 5rem;
+}
+.sidedrawer-logo-container img {
+  height: 5rem;
+  width: fit-content;
+}
