@@ -196,19 +196,32 @@ function openNav(eventParams) {
         aside[0].classList.toggle("sidedrawer--inactive");
         aside[0].classList.toggle("sidedrawer--active");
 
+        const extraCollegeCard =
+          document.getElementsByClassName("college_cards");
+
+        console.log("🅰️", extraCollegeCard);
+
+        console.log(extraCollegeCard[i]);
+
+        const collegeImageDataValue =
+          extraCollegeCard[i].getElementsByClassName("card-img-top")[0];
+        const collegeNameDataValue =
+          extraCollegeCard[i].getElementsByClassName("college_title_home")[0];
+        const collegeLocationDataValue = extraCollegeCard[
+          i
+        ].getElementsByClassName("college_address_home")[0];
+
+        console.log("🅰️🅰️🅰️🅰️🅰️", collegeNameDataValue.innerHTML);
+        console.log("🅰️🅰️🅰️🅰️🅰️", collegeLocationDataValue.innerHTML);
+        console.log("🅰️🅰️🅰️🅰️🅰️", collegeImageDataValue.src);
+
         setDataInAside(
-          collegeDataSets.collegeData[i].name,
-          collegeDataSets.collegeData[i].location,
-          collegeDataSets.collegeData[i].description
+          collegeNameDataValue.innerHTML,
+          collegeLocationDataValue.innerHTML
         );
 
-        setLinkInAside(
-          collegeDataSets.collegeData[i].facebookUrl,
-          collegeDataSets.collegeData[i].linkedInUrl,
-          collegeDataSets.collegeData[i].instagramUrl,
-          collegeDataSets.collegeData[i].websiteUrl
-        );
-        setImgInAside(collegeDataSets.collegeData[i].logoUrl);
+        setLinkInAside(undefined, undefined, undefined, undefined);
+        setImgInAside(collegeImageDataValue.src);
       });
     }
   } else {
@@ -269,7 +282,11 @@ document
  * System. The University of Texas was inducted into the Association of American Universities in 1929,
  * becoming only the third university in the American South
  */
-const setDataInAside = (nameParam, locationParam, descriptionParam) => {
+const setDataInAside = (
+  nameParam,
+  locationParam,
+  descriptionParam = undefined
+) => {
   // change content of aside
   //?set college name
   const collegeNameNode = document.getElementById("college-name");
@@ -292,6 +309,7 @@ const setDataInAside = (nameParam, locationParam, descriptionParam) => {
   } else {
     collegeDescriptionSectionNode.style.display = "block";
   }
+
   const newCollegeDescription = descriptionParam;
   collegeDescriptionNode.innerHTML = `${newCollegeDescription}`;
 };
