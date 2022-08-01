@@ -1075,9 +1075,12 @@ body {
 }
 
 .sidedrawer-logo-container {
-  height: 5rem;
+  /* background-color: red; */
+  height: 4rem;
+  width: 100%;
 }
 .sidedrawer-logo-container img {
-  height: 5rem;
+  height: 4rem;
+  max-width: 100%;
   width: fit-content;
 }
