@@ -63,9 +63,9 @@ body {
 .search_form:valid .search_icon {
   color: black;
   /* padding: 5px;
-    border-radius: 10px;
-    background: var(--primary_color);
-    color: white; */
+      border-radius: 10px;
+      background: var(--primary_color);
+      color: white; */
 }
 
 .search_form .search_txt {
@@ -188,16 +188,16 @@ body {
 }
 
 /* .search_txt {
-    width: 0px;
-} */
+      width: 0px;
+  } */
 
 /* .search_box:hover>.search_txt {
-    width: auto;
-} */
+      width: auto;
+  } */
 
 /* .search_box:hover{
-    border: 1px solid var(--primary_color);
-} */
+      border: 1px solid var(--primary_color);
+  } */
 .search_box {
   border: 0;
   background-color: transparent !important;
@@ -206,7 +206,7 @@ body {
 /* for footer */
 .footer {
   /* color: var(--primary_color);
-    background-color: rgba(256,256,256,0.4); */
+      background-color: rgba(256,256,256,0.4); */
   color: gray;
   font-size: 0.8em;
   height: 5vh;
@@ -242,8 +242,14 @@ body {
   font-weight: 400;
 }
 
+/* for card title on index page */
+.card-body .college_title_home {
+  text-align: left;
+}
+
 /* for other colleges */
 .college_title_home {
+  text-align: center;
   color: var(--primary_color);
 }
 
@@ -279,9 +285,14 @@ body {
 
 .box {
   background-color: var(--primary_color);
-  max-width: fit-content;
+  /* max-width: fit-content; */
   font-size: 1.25em;
+  text-align: center;
   color: white;
+  min-width: 6rem !important;
+  word-break: break-all;
+  max-width: 4rem !important;
+  height: 2.75rem;
 }
 
 .year_box:hover {
@@ -490,8 +501,8 @@ a {
 }
 
 /* .explore_search_bar .explore_search_txt {
-    width: 50%;
-} */
+      width: 50%;
+  } */
 
 .filter_section {
   background-color: var(--light_gray);
@@ -627,7 +638,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidedrawer {
-  text-align: justify;
+  /* text-align: justify; */
   overflow: hidden;
   border-bottom-right-radius: 0.55rem;
   padding: 2rem 1rem 1rem 1rem;
@@ -637,7 +648,7 @@ body::-webkit-scrollbar-thumb {
   min-height: calc(100vh - 99px);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: var(--primary_color);
-  transition: all ease-in-out 400ms;
+  transition: width ease-in-out 30ms;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -686,7 +697,7 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (min-width: 1220px) {
   .sidedrawer--active {
     display: block;
-    visibility: visible;
+    /* visibility: visible; */
   }
 }
 
@@ -712,10 +723,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidedrawer--inactive .description_section {
-  visibility: hidden;
+  /* visibility: hidden; */
   opacity: 0;
   height: 0;
-  /* display: none; */
+  display: none;
   transition: all ease-in-out 0ms;
 }
 .sidedrawer--inactive:hover {
@@ -742,11 +753,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidedrawer--inactive:hover .description_section {
-  visibility: visible;
+  /* visibility: visible; */
   opacity: 1;
   height: 100%;
-  /* display: block; */
-  transition: all ease-in-out 900ms;
+  display: block;
+  transition: all ease-in-out 30ms;
 }
 
 .sidedrawer--inactive:hover .sidedrawer_icon-wrapper {
@@ -825,10 +836,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidedrawer--active .description_section {
-  visibility: visible;
+  /* visibility: visible; */
+  display: block;
   opacity: 1;
   height: 100%;
-  transition: all ease-in-out 900ms;
+  transition: all ease-in-out 30ms;
 }
 
 .sidedrawer--active .sidedrawer_icon-wrapper {
@@ -881,7 +893,7 @@ body {
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.55rem;
   width: 15rem;
-  overflow: hidden;
+
   padding: 2rem 1rem;
   color: var(--secondary_color);
   z-index: 1000;
@@ -891,8 +903,11 @@ body {
   transition: all ease-in-out 300ms;
   border: 1px solid var(--light_gray);
 }
+.right-sidedrawer:hover > .right-sidedrawer_icon-container {
+  display: none !important;
+}
 .right-sidedrawer:hover {
-  transition: all ease-in-out 200ms;
+  transition: all ease-in-out 30ms;
   border-bottom-left-radius: 1rem;
 }
 
@@ -959,13 +974,15 @@ body {
   display: none;
 }
 .content_wrapper {
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
   opacity: 0;
   transition: all ease-in-out 150ms;
 }
 
 .right-panel:hover .content_wrapper {
-  visibility: visible;
+  /* visibility: visible; */
+  display: block;
   opacity: 1;
   transition: all ease-in-out 200ms;
 }
@@ -1044,7 +1061,7 @@ body {
 
 /* =========================== fixes on college card img overflow */
 .college_cards {
-  min-height: 15rem;
+  min-height: 14rem;
 }
 
 .img_container {
@@ -1067,7 +1084,7 @@ body {
   padding: 5px;
   display: block;
   display: -webkit-box;
-  max-width: 400px;
+  /* max-width: 400px; */
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -1083,4 +1100,47 @@ body {
   height: 4rem;
   max-width: 100%;
   width: fit-content;
+}
+
+.one-liner,
+.two-liner {
+  display: block;
+  display: -webkit-box;
+  max-width: 400px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* slow sidedrawer fix:  college description   paragraph auto height adaption caught adverse change in height of sidedrawer during transition*/
+/* fix: set fixed height to sidedrawer " college description " section, and for overflow content when sidedrawer's width is minimum(during transition)  set it to overflow hidden */
+#college-description {
+  /* display: none; */
+  overflow: hidden;
+  background-color: red;
+  height: 15rem !important;
+}
+
+.sidedrawer {
+  transition: all ease-out 0.2s;
+}
+
+/* fix:  select year box issue of min-width  */
+
+/* fix card anchor links not visible clearly*/
+.allpcard .link-highlighter:hover {
+  color: var(--secondary_color);
+}
+
+.similar_projects .similar-project-description {
+  max-width: 4rem;
+}
+
+.two-liner {
+  -webkit-line-clamp: 2;
+}
+/* vertically align similar card text to center */
+.similar_projects .two-liner {
+  margin: 0;
 }

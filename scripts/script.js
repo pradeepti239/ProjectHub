@@ -9,13 +9,13 @@ const collegeDataSets = {
     description: `
     Deerwalk Institute of Technology is a private college established in 2010 in collaboration between Nepalese entrepreneurs and the United States-based software company, Deerwalk Inc. It is an affiliation to Tribhuvan University, which is the oldest University in Nepal. 
     
-
   `,
 
-    facebookUrl: "https://www.facebook.com",
-    linkedInUrl: "https://www.linkedin.com",
-    instagramUrl: "https://www.instagram.com",
-    websiteUrl: " https://website.com",
+    facebookUrl: "https://www.facebook.com/dwit.college",
+    linkedInUrl: "https://www.linkedin.com/company/deerwalk-inc/",
+    instagramUrl:
+      "https://www.instagram.com/explore/locations/1021688517/deerwalk-institute-of-technology?hl=en",
+    websiteUrl: " https://deerwalk.edu.np/DWIT/",
   },
 };
 
@@ -29,9 +29,6 @@ const aside = document.getElementsByClassName("sidedrawer");
 
 const collegeCards = document.getElementsByClassName("college_cards");
 
-console.log(collegeCards);
-console.log(collegeCards.length);
-
 function openNav(eventParams) {
   if (collegeCards.length <= 3) {
     for (let i = 0; i < collegeCards.length; i++) {
@@ -42,10 +39,6 @@ function openNav(eventParams) {
         const extraCollegeCard =
           document.getElementsByClassName("college_cards");
 
-        console.log("🅰️", extraCollegeCard);
-
-        console.log(extraCollegeCard[i]);
-
         const collegeImageDataValue =
           extraCollegeCard[i].getElementsByClassName("card-img-top")[0];
         const collegeNameDataValue =
@@ -53,10 +46,6 @@ function openNav(eventParams) {
         const collegeLocationDataValue = extraCollegeCard[
           i
         ].getElementsByClassName("college_address_home")[0];
-
-        console.log("🅰️🅰️🅰️🅰️🅰️", collegeNameDataValue.innerHTML);
-        console.log("🅰️🅰️🅰️🅰️🅰️", collegeLocationDataValue.innerHTML);
-        console.log("🅰️🅰️🅰️🅰️🅰️", collegeImageDataValue.src);
 
         setDataInAside(
           collegeNameDataValue.innerHTML,
@@ -168,7 +157,6 @@ const setLinkInAside = (
   const instLink = document.getElementById("instagram_link");
   const websiteLink = document.getElementById("website_link");
 
-  // console.log(facebookLink);
   //change attribute of anchor tag of icons in aside
   // hiden  icon if  link is null
   if (facebookLinkParam === null) {
@@ -180,19 +168,19 @@ const setLinkInAside = (
   if (linkedInLinkParam === null) {
     linkedInLink.style.display = "none";
   } else {
-    linkedInLink.href = facebookLinkParam;
+    linkedInLink.href = linkedInLinkParam;
     linkedInLink.style.display = "block";
   }
   if (instagramLinkParam === null) {
     instLink.style.display = "none";
   } else {
-    instLink.href = facebookLinkParam;
+    instLink.href = instagramLinkParam;
     instLink.style.display = "block";
   }
   if (websiteLinkParam === null) {
     websiteLink.style.display = "none";
   } else {
-    websiteLink.href = facebookLinkParam;
+    websiteLink.href = websiteLinkParam;
     websiteLink.style.display = "block";
   }
 };
