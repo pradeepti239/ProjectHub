@@ -1118,7 +1118,6 @@ body {
 #college-description {
   /* display: none; */
   overflow: hidden;
-  background-color: red;
   height: 15rem !important;
 }
 
