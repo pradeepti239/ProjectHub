@@ -8,13 +8,13 @@ const collegeDataSets = {
     location: "Deerwalk, Illinois",
     description: `
     Deerwalk Institute of Technology is a private college established in 2010 in collaboration between Nepalese entrepreneurs and the United States-based software company, Deerwalk Inc. It is an affiliation to Tribhuvan University, which is the oldest University in Nepal. 
-    
+    Deerwalk Institute of Technology is a private college established in 2010 in collaboration between Nepalese entrepreneurs and the United States-based software company, Deerwalk Inc. It is an affiliation to Tribhuvan University, which is the oldest University in Nepal. 
+     
   `,
 
     facebookUrl: "https://www.facebook.com/dwit.college",
     linkedInUrl: "https://www.linkedin.com/company/deerwalk-inc/",
-    instagramUrl:
-      "https://www.instagram.com/explore/locations/1021688517/deerwalk-institute-of-technology?hl=en",
+    instagramUrl: "https://www.instagram.com/explore/locations/1021688517/deerwalk-institute-of-technology?hl=en",
     websiteUrl: " https://deerwalk.edu.np/DWIT/",
   },
 };
@@ -36,21 +36,13 @@ function openNav(eventParams) {
         aside[0].classList.toggle("sidedrawer--inactive");
         aside[0].classList.toggle("sidedrawer--active");
 
-        const extraCollegeCard =
-          document.getElementsByClassName("college_cards");
+        const extraCollegeCard = document.getElementsByClassName("college_cards");
 
-        const collegeImageDataValue =
-          extraCollegeCard[i].getElementsByClassName("card-img-top")[0];
-        const collegeNameDataValue =
-          extraCollegeCard[i].getElementsByClassName("college_title_home")[0];
-        const collegeLocationDataValue = extraCollegeCard[
-          i
-        ].getElementsByClassName("college_address_home")[0];
+        const collegeImageDataValue = extraCollegeCard[i].getElementsByClassName("card-img-top")[0];
+        const collegeNameDataValue = extraCollegeCard[i].getElementsByClassName("college_title_home")[0];
+        const collegeLocationDataValue = extraCollegeCard[i].getElementsByClassName("college_address_home")[0];
 
-        setDataInAside(
-          collegeNameDataValue.innerHTML,
-          collegeLocationDataValue.innerHTML
-        );
+        setDataInAside(collegeNameDataValue.innerHTML, collegeLocationDataValue.innerHTML);
 
         setLinkInAside(undefined, undefined, undefined, undefined);
         setImgInAside(collegeImageDataValue.src);
@@ -62,11 +54,7 @@ function openNav(eventParams) {
         aside[0].classList.toggle("sidedrawer--inactive");
         aside[0].classList.toggle("sidedrawer--active");
 
-        setDataInAside(
-          allCollegesDataSet[i].name,
-          allCollegesDataSet[i].location,
-          allCollegesDataSet[i].description
-        );
+        setDataInAside(allCollegesDataSet[i].name, allCollegesDataSet[i].location, allCollegesDataSet[i].description);
 
         setLinkInAside(
           allCollegesDataSet[i].facebookUrl,
@@ -85,22 +73,21 @@ openNav("mouseout");
 
 //  set default college data when directly  hovered in navbar
 
-document
-  .getElementsByClassName("sidedrawer")[0]
-  .addEventListener("mouseover", function () {
-    setDataInAside(
-      collegeDataSets.defaultCollegeData.name,
-      collegeDataSets.defaultCollegeData.location,
-      collegeDataSets.defaultCollegeData.description
-    );
-    setLinkInAside(
-      collegeDataSets.defaultCollegeData.facebookUrl,
-      collegeDataSets.defaultCollegeData.linkedInUrl,
-      collegeDataSets.defaultCollegeData.instagramUrl,
-      collegeDataSets.defaultCollegeData.websiteUrl
-    );
-    setImgInAside(collegeDataSets.defaultCollegeData.logoUrl);
-  });
+document.getElementsByClassName("sidedrawer")[0].addEventListener("mouseover", function () {
+  setDataInAside(
+    collegeDataSets.defaultCollegeData.name,
+    collegeDataSets.defaultCollegeData.location,
+    collegeDataSets.defaultCollegeData.description
+  );
+
+  setLinkInAside(
+    collegeDataSets.defaultCollegeData.facebookUrl,
+    collegeDataSets.defaultCollegeData.linkedInUrl,
+    collegeDataSets.defaultCollegeData.instagramUrl,
+    collegeDataSets.defaultCollegeData.websiteUrl
+  );
+  setImgInAside(collegeDataSets.defaultCollegeData.logoUrl);
+});
 
 // Language: javascript
 
@@ -114,11 +101,7 @@ document
  * System. The University of Texas was inducted into the Association of American Universities in 1929,
  * becoming only the third university in the American South
  */
-const setDataInAside = (
-  nameParam,
-  locationParam,
-  descriptionParam = undefined
-) => {
+const setDataInAside = (nameParam, locationParam, descriptionParam = undefined) => {
   // change content of aside
   //?set college name
   const collegeNameNode = document.getElementById("college-name");
@@ -132,9 +115,7 @@ const setDataInAside = (
   //?set college description
   const collegeDescriptionNode = document.getElementById("college-description");
 
-  const collegeDescriptionSectionNode = document.getElementById(
-    "college_description_division"
-  );
+  const collegeDescriptionSectionNode = document.getElementById("college_description_division");
 
   if (descriptionParam === null || descriptionParam === undefined) {
     collegeDescriptionSectionNode.style.display = "none";
@@ -146,12 +127,7 @@ const setDataInAside = (
   collegeDescriptionNode.innerHTML = `${newCollegeDescription}`;
 };
 
-const setLinkInAside = (
-  facebookLinkParam = null,
-  linkedInLinkParam = null,
-  instagramLinkParam = null,
-  websiteLinkParam = null
-) => {
+const setLinkInAside = (facebookLinkParam = null, linkedInLinkParam = null, instagramLinkParam = null, websiteLinkParam = null) => {
   const facebookLink = document.getElementById("facebook_link");
   const linkedInLink = document.getElementById("linkedin_link");
   const instLink = document.getElementById("instagram_link");

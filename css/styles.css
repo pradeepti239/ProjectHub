@@ -353,8 +353,7 @@ a {
 /* view project start */
 
 .tracking-in-expand {
-  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
-    both;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
@@ -638,6 +637,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidedrawer {
+  width: 13rem;
   /* text-align: justify; */
   overflow: hidden;
   border-bottom-right-radius: 0.55rem;
@@ -702,35 +702,31 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidedrawer--inactive {
-  width: 3rem;
+  transform: translateX(-75%);
+  margin-left: 50%;
 }
 
 .sidedrawer_opener-icon {
   font-size: 2rem;
   top: 50%;
-  left: 50%;
-
-  transform: translateY(-50%) translateX(-50%);
+  right: -0.45rem;
   position: absolute;
   color: var(--stroke_color);
 }
 
 .description_section {
-  /* background-color: red; */
-
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--stroke_color);
 }
 
 .sidedrawer--inactive .description_section {
-  /* visibility: hidden; */
   opacity: 0;
   height: 0;
   display: none;
   transition: all ease-in-out 0ms;
 }
 .sidedrawer--inactive:hover {
-  width: 15rem;
+  transform: none;
 }
 
 @media only screen and (max-width: 1752px) {
@@ -942,7 +938,7 @@ body {
 }
 
 .sidedrawer_header_logo {
-  width: 9rem;
+  /* width: 9rem; */
 }
 
 .right-sidedrawer_icon-container {
@@ -995,9 +991,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 54px 55px,
-    rgba(0, 0, 0, 0.06) 0px -12px 30px, rgba(0, 0, 0, 0.06) 0px 4px 6px,
-    rgba(0, 0, 0, 0.1) 0px 12px 13px, rgba(0, 0, 0, 0.05) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 54px 55px, rgba(0, 0, 0, 0.06) 0px -12px 30px, rgba(0, 0, 0, 0.06) 0px 4px 6px, rgba(0, 0, 0, 0.1) 0px 12px 13px,
+    rgba(0, 0, 0, 0.05) 0px -3px 5px;
 }
 
 .share_circle i {
@@ -1117,8 +1112,8 @@ body {
 /* fix: set fixed height to sidedrawer " college description " section, and for overflow content when sidedrawer's width is minimum(during transition)  set it to overflow hidden */
 #college-description {
   /* display: none; */
-  overflow: hidden;
-  height: 15rem !important;
+  /* overflow: hidden; */
+  /* height: 15rem !important; */
 }
 
 .sidedrawer {
@@ -1142,4 +1137,22 @@ body {
 /* vertically align similar card text to center */
 .similar_projects .two-liner {
   margin: 0;
+}
+
+/* ==================zoom in out animation  */
+
+.zoom-in-out-box {
+  animation: zoom-in-zoom-out 400ms ease;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    opacity: 0.5;
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
 }
