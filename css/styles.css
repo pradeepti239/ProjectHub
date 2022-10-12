@@ -1083,6 +1083,7 @@ body {
   width: fit-content;
 }
 
+.year-project-card .vector,
 .year-card .vector {
   position: absolute;
   height: 100%;
@@ -1090,9 +1091,11 @@ body {
   right: 0;
 }
 
+.year-project-card .sub-vector,
 .year-card .sub-vector {
   right: 0.25rem;
 }
+.year-project-card:hover,
 .year-card:hover {
   /* transition: all ease-in-out 200ms; */
   /* background-color: #5a94bd; */
@@ -1145,8 +1148,17 @@ body {
 }
 
 /* 
-.year-screen-header {
+.project-type-screen-header,.year-screen-header {
 } */
+.project-type-screen-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.project-type-screen-header .title {
+  display: inline;
+}
+.project-type-screen-header .title,
 .year-screen-header .title {
   color: #0f5288;
   font-size: 2.4rem;
@@ -1154,9 +1166,16 @@ body {
 }
 .year-screen-header .title .title-underline {
   width: 4rem;
+  height: 0.15rem;
+}
+.year-screen-header .title .title-underline,
+.project-type-screen-header .title .title-underline {
   color: #bbbdc1;
   opacity: 1;
   height: 0.15rem;
+}
+.project-type-screen-header .title .title-underline {
+  bottom: -1.2rem;
 }
 
 .year-screen-header p.sub-title {
@@ -1224,4 +1243,30 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (max-width: 1005px) {
+  .year-project-card-container {
+    flex-wrap: wrap;
+  }
+  .year-project-card {
+    font-size: calc(1rem + 0.2vw);
+  }
+}
+@media only screen and (max-width: 770px) {
+  .year-project-card-container {
+    flex-direction: column;
+  }
+
+  .year-project-card {
+    min-width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .project-type-screen-header .title {
+    font-size: 6vw;
+  }
+}
+.project-type-screen-header .title {
+  margin-top: 5rem;
 }
