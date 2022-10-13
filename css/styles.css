@@ -1089,6 +1089,12 @@ body {
   height: 100%;
   top: 0;
   right: 0;
+  display: block;
+}
+
+.year-project-card:hover .vector,
+.year-card:hover .vector {
+  display: none;
 }
 
 .year-project-card .sub-vector,
@@ -1150,14 +1156,7 @@ body {
 /* 
 .project-type-screen-header,.year-screen-header {
 } */
-.project-type-screen-header {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-.project-type-screen-header .title {
-  display: inline;
-}
+
 .project-type-screen-header .title,
 .year-screen-header .title {
   color: #0f5288;
@@ -1198,11 +1197,11 @@ body {
   height: 400px;
   background-color: #ececec;
 
-  left: -150px;
+  right: -250px;
   border-radius: 45%;
   transition: 100ms all ease-in-out;
   animation: wave 10s infinite linear;
-  top: -450px;
+  bottom: -450px;
 }
 
 .liquid-btn-effect::after {
@@ -1211,11 +1210,31 @@ body {
   width: 400px;
   height: 400px;
   background-color: #ececec80;
-  left: -150px;
+  right: -250px;
   border-radius: 45%;
   transition: 200ms all ease-in-out;
   animation: wave 9s infinite linear;
-  top: -440px;
+  bottom: -440px;
+}
+
+@media only screen and (max-width: 1285px) {
+  .liquid-btn-effect-breakpoint::before {
+    width: 350px;
+    right: -260px;
+  }
+
+  .liquid-btn-effect-breakpoint::after {
+    width: 350px;
+    right: -250px;
+  }
+}
+@media only screen and (max-width: 635px) {
+  .liquid-btn-effect::before {
+    display: none;
+  }
+  .liquid-btn-effect::after {
+    display: none;
+  }
 }
 
 .liquid-btn-effect span {
@@ -1228,11 +1247,11 @@ body {
 }
 
 .liquid-btn-effect:hover::before {
-  top: -370px;
+  bottom: -310px;
 }
 
 .liquid-btn-effect:hover::after {
-  top: -360px;
+  bottom: -300px;
 }
 
 @keyframes wave {
