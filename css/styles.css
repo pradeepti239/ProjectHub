@@ -1195,8 +1195,8 @@ body {
   content: "";
   width: 400px;
   height: 400px;
-  background-color: #ececec;
-
+  background-color: white;
+  z-index: 9;
   right: -250px;
   border-radius: 45%;
   transition: 100ms all ease-in-out;
@@ -1209,7 +1209,7 @@ body {
   content: "";
   width: 400px;
   height: 400px;
-  background-color: #ececec80;
+  background-color: #3573a380;
   right: -250px;
   border-radius: 45%;
   transition: 200ms all ease-in-out;
