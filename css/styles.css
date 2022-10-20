@@ -1089,12 +1089,17 @@ body {
   height: 100%;
   top: 0;
   right: 0;
-  display: block;
+  opacity: 1;
+  transition: all ease-in-out 600ms;
 }
 
 .year-project-card:hover .vector,
 .year-card:hover .vector {
-  display: none;
+  /* opacity: 0; */
+  bottom: 0;
+  transform-origin: bottom;
+  transform: translateX(5rem);
+  transition: all ease-in-out 600ms;
 }
 
 .year-project-card .sub-vector,
@@ -1195,11 +1200,11 @@ body {
   content: "";
   width: 400px;
   height: 400px;
-  background-color: white;
+  background-color: #3170a0;
   z-index: 9;
   right: -250px;
   border-radius: 45%;
-  transition: 100ms all ease-in-out;
+  transition: 699ms all ease-in-out;
   animation: wave 10s infinite linear;
   bottom: -450px;
 }
@@ -1212,7 +1217,7 @@ body {
   background-color: #3573a380;
   right: -250px;
   border-radius: 45%;
-  transition: 200ms all ease-in-out;
+  transition: 699ms all ease-in-out;
   animation: wave 9s infinite linear;
   bottom: -440px;
 }
