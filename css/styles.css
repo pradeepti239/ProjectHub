@@ -1097,9 +1097,8 @@ body {
 .year-card:hover .vector {
   /* opacity: 0; */
   bottom: 0;
-  transform-origin: bottom;
-  transform: translateX(5rem);
-  transition: all ease-in-out 600ms;
+  opacity: 0;
+  transition: 500ms all ease-in-out;
 }
 
 .year-project-card .sub-vector,
@@ -1114,7 +1113,8 @@ body {
 .year-card {
   padding: 1.5rem 2.5rem;
   color: white;
-  background-color: #0f5288;
+  /* //:todo */
+  /* background-color: #16588d; */
   border-radius: 0.75rem;
   cursor: pointer;
   font-size: 1.5rem;
@@ -1198,39 +1198,50 @@ body {
 .liquid-btn-effect::before {
   position: absolute;
   content: "";
-  width: 400px;
-  height: 400px;
-  background-color: #3170a0;
+  width: 500px;
+  height: 500px;
+  /* background-color: #3170a0; */
+  background-color: #16588d;
   z-index: 9;
-  right: -250px;
   border-radius: 45%;
-  transition: 699ms all ease-in-out;
+  transition: 700ms all ease-in-out;
   animation: wave 10s infinite linear;
-  bottom: -450px;
+  transform-origin: center;
+  right: 45px;
+  bottom: -50%;
+  opacity: 0;
 }
 
 .liquid-btn-effect::after {
   position: absolute;
   content: "";
-  width: 400px;
-  height: 400px;
-  background-color: #3573a380;
-  right: -250px;
+  width: 500px;
+  height: 500px;
+  /* background-color: #3573a380; */
+  background-color: #206396;
   border-radius: 45%;
-  transition: 699ms all ease-in-out;
+  transition: 700ms all ease-in-out;
   animation: wave 9s infinite linear;
-  bottom: -440px;
+  right: 30px;
+  bottom: -50%;
+  opacity: 0;
+}
+.liquid-btn-effect:hover::before {
+  opacity: 1;
+}
+.liquid-btn-effect:hover::after {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1285px) {
   .liquid-btn-effect-breakpoint::before {
     width: 350px;
-    right: -260px;
+    left: -260px;
   }
 
   .liquid-btn-effect-breakpoint::after {
     width: 350px;
-    right: -250px;
+    left: -250px;
   }
 }
 @media only screen and (max-width: 635px) {
@@ -1249,14 +1260,6 @@ body {
 
 .liquid-btn-effect:hover {
   color: #fff;
-}
-
-.liquid-btn-effect:hover::before {
-  bottom: -310px;
-}
-
-.liquid-btn-effect:hover::after {
-  bottom: -300px;
 }
 
 @keyframes wave {
@@ -1293,4 +1296,15 @@ body {
 }
 .project-type-screen-header .title {
   margin-top: 5rem;
+}
+
+.liquid-card-title {
+  z-index: 9;
+}
+
+.year-card {
+  background: #16588d;
+}
+.year-card:hover {
+  background-color: #3573a3;
 }
