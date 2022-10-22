@@ -1308,3 +1308,12 @@ body {
 .year-card:hover {
   background-color: #3573a3;
 }
+.select-year-illustrator {
+  height: 50vh;
+}
+
+@media only screen and (max-height: 677px) {
+  .select-year-illustrator-container {
+    display: none !important;
+  }
+}
